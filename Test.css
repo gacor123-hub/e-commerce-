@@ -284,12 +284,9 @@ footer {
         display: none;
     }
 
-    .hero{
-      width:500px;
-    }
-
     .hero h1 {
         font-size: 28px;
+        width:500px;
     }
 }
 
