@@ -79,10 +79,12 @@ header {
 .hero {
     background-image:url(https://swalayankomputer.com/wp-content/uploads/2019/11/Toko-Komputer-Surabaya-Harga-Terbaik-Lengkap-Berkualitas.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
     color: white;
     padding: 60px 0;
     margin-bottom: 35px;
-    height:60%;
+    height:100px;
 }
 
 .hero h1 {
