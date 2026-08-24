@@ -331,7 +331,7 @@ function checkoutWhatsApp() {
 
 
     let pesan =
-        "Halo, saya ingin memesan:%0A%0A";
+        "Halo, saya ingin memesan:\n";
 
 
     let total = 0;
@@ -346,20 +346,20 @@ function checkoutWhatsApp() {
 
 
         pesan +=
-            `• ${item.name} x${item.quantity} - ${formatRupiah(subtotal)}%0A`;
+            `• ${item.name} x${item.quantity} - ${formatRupiah(subtotal)}\n`;
 
     });
 
 
     pesan +=
-        `%0ATotal: ${formatRupiah(total)}%0A%0A`;
+        `Total: ${formatRupiah(total)}\n`;
 
     pesan +=
         "Mohon informasi untuk proses selanjutnya. Terima kasih.";
 
 
-    const url =
-        `https://wa.me/${nomorWhatsApp}?text=${pesan}`;
+  const url =
+    `https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(pesan)}`;
 
 
     window.open(url, "_blank");
