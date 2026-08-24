@@ -358,8 +358,9 @@ function checkoutWhatsApp() {
         "Mohon informasi untuk proses selanjutnya. Terima kasih.";
 
 
-   const url =
-    `https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(pesan)}`;
+    const url =
+        `https://wa.me/${nomorWhatsApp}?text=${pesan}`;
+
 
     window.open(url, "_blank");
 
