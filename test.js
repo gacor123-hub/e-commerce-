@@ -3,7 +3,7 @@
 // ===============================
 
 // Ganti dengan nomor WhatsApp kamu
-const nomorWhatsApp = "+6281223223047";
+const nomorWhatsApp = "6281223223047";
 
 
 // ===============================
@@ -358,9 +358,8 @@ function checkoutWhatsApp() {
         "Mohon informasi untuk proses selanjutnya. Terima kasih.";
 
 
-    const url =
-        `https://wa.me/${nomorWhatsApp}?text=${pesan}`;
-
+   const url =
+    `https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(pesan)}`;
 
     window.open(url, "_blank");
 
