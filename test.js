@@ -3,7 +3,7 @@
 // ===============================
 
 // Ganti dengan nomor WhatsApp kamu
-const nomorWhatsApp = "6283159963296";
+const nomorWhatsApp = "62";
 
 
 // ===============================
